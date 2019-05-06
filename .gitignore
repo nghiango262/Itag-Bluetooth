@@ -1,0 +1,27 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/app/build
+/captures
+.externalNativeBuild
+/app/release
+.idea/caches
+.idea/assetWizardSettings.xml
+app/google-services.json
+keystore.properties
+# fastlane specific
+fastlane/report.xml
+# deliver temporary files
+fastlane/Preview.html
+# snapshot generated screenshots
+fastlane/screenshots
+# scan temporary files
+fastlane/test_output
+itag-fastlane-api.json
+session.vim
+.idea/
+waytoday/src/main/java/s4y/waytoday/wsse/Secret.java

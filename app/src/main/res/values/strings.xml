@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">iTag One</string>
+    <string name="empty" translatable="false" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_no_ble_fragment">Your device has no Bluetooth adapter</string>
+
+    <string name="request_permission_title">Permission required</string>
+    <string name="request_location_permission">Starting from Android 6.0 Marhmallow the system requires location permission in order to scan for Bluetooth LE devices.\\nYou will have to restart scann process after the giving the access.</string>
+    <string name="confirm_title">Confirm</string>
+    <string name="confirm_forget">The device will be forgotten, are you sure? You will be able to reconnect this device and remember it in any moment though.\n\nForget?</string>
+    <string name="confirm_disconnect">Flinging with your finger you requested iTag to be disconnected.\nThis is not dangerous, the iTag will not be forgotten and you will be able to connect it back with the same side-to-side fling.\n\nDo you really want disconnect iTag?</string>
+    <string name="change_name">Set iTag\'s name</string>
+    <string name="manage_alert">Enable/disable Alert on disconnect</string>
+
+    <string name="scanning">Scanning for iTags&#8230;</string>
+    <string name="scanning_new">Scanning for new iTags&#8230;</string>
+    <string name="scanning_more">Scanning for more iTags&#8230;</string>
+
+    <string name="color">Change iTag color</string>
+    <string name="start_scan">Scan for new iTags</string>
+    <string name="rememebr">Remember iTag</string>
+    <string name="forget">Forget iTag</string>
+    <string name="itag">Connected iTag</string>
+
+    <string name="connect">iTag will connect</string>
+    <string name="disconnect">iTag will be disconnected</string>
+
+    <string name="rssi">Signal strength: %d</string>
+
+    <string name="white">White</string>
+    <string name="black">Black</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="gold">Gold</string>
+    <string name="blue">Blue</string>
+
+    <string name="service_in_background">Double click iTag\'s button to find the phone</string>
+    <string name="service_description">Long press iTag\'s image to make it to ring.</string>
+
+    <string name="notify_disconnect">%s disconnected</string>
+    <string name="click_to_silent">Click to stop alarm</string>
+
+    <string name="help_longpress">Long Press to Find the iTag</string>
+
+    <string name="help_scan">You have no iTag devices connected yet.\n\nClick "Scan" button above to start searching.</string>
+
+    <string name="try_enable_bt">Bluetooth is turning on</string>
+    <string name="try_enable_bt_failed">You need to Enable Bluetooth manually in the Device Settings.</string>
+    <string name="open_bt_settings">Turn on Bluetooth</string>
+
+    <string name="bt_disabled">off</string>
+    <string name="bt_connecting">hooking</string>
+    <string name="bt_setup">lost</string>
+    <string name="bt_call">yelling</string>
+    <string name="bt">near by</string>
+    <string name="bt_unk">faint</string>
+    <string name="last_seen">Last+seen+here+%d+%s+ago</string>
+
+    <string name="not_connected">Not connected</string>
+    <string name="status133">The device seems to have a problem. Anti lost feature may fail.</string>
+
+    <string name="no_geo_activity">It looks like your device does not have any Map location</string>
+    <string name="can_not_get_gps_location">iTag One could not get exact location because GPS disabled for this application</string>
+
+    <string name="uint_sec" translatable="false"> sec </string>
+    <string name="uint_min" translatable="false"> min </string>
+    <string name="uint_hour" translatable="false"> hr </string>
+
+    <string name="menu_app_exit">Stop tracking</string>
+
+    <string name="freq_hour_1">1 hour</string>
+    <string name="freq_min_30">Half an hour</string>
+    <string name="freq_min_15">15 minutes</string>
+    <string name="freq_min_5">5 minutes</string>
+    <string name="freq_min_1">1 minute</string>
+    <string name="freq_sec_15">15 seconds</string>
+    <string name="freq_sec_5">5 seconds</string>
+    <string name="freq_sec_1">1 second</string>
+    <string name="off">Turn off</string>
+    <string name="about_wt">About Way.Today</string>
+    <string name="freq_continuously">Сontinuously</string>
+    <string name="waytoday">Way.Today</string>
+    <string name="trackid">Way.Today ID:</string>
+    <string name="wt_new_id">Change ID</string>
+    <string name="wt_share">Share locaiton</string>
+    <string name="share_title">Share via…</string>
+    <string name="share_link"><![CDATA[Track my location by clicking https://way.today/#%1$s!30m or use ID %1$s on the site way.today]]></string>
+    <string name="share_subj">Way.Today location note</string>
+    <string name="about_ok">Install Way.Today</string>
+    <string name="about_cancel">Close</string>
+    <string name="about_message">With a short living personal code Way.Today lets you share the current location with others without hurting your privacy.\n\nYou can track your iTag on Way.Today site right now or install the standalone app which does not require the gadget.\n\nWe recommend to give it a try because of some nice features iTag One does not have.</string>
+    <string name="disable_wt">Remove it</string>
+    <string name="disable_wt_msg">This action will remove and disable Way.Today forever.\n\nThe only way to restore the traking is removing and installing the application.</string>
+    <string name="disable_wt_ok">Disable Way.Today</string>
+</resources>

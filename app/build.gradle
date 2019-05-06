@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "s4y.itag"
+        minSdkVersion 19
+        targetSdkVersion 28
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            manifestPlaceholders = [analytics_deactivated: "true"]
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [analytics_deactivated: "false"]
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.annotation:annotation:1.0.1'
+    implementation 'androidx.core:core:1.0.1'
+    implementation 'androidx.fragment:fragment:1.0.0'
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.9'
+    implementation project(':waytoday')
+
+    testImplementation 'androidx.test.ext:junit:1.1.0'
+    testImplementation 'androidx.test:rules:1.1.1'
+    testImplementation 'com.google.truth:truth:0.42'
+    testImplementation 'org.mockito:mockito-core:2.23.4'
+    testImplementation 'org.robolectric:robolectric:4.1'
+
+    androidTestImplementation 'androidx.test:rules:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation "org.mockito:mockito-android:2.23.4"
+}
+
+apply plugin: 'com.google.gms.google-services'
